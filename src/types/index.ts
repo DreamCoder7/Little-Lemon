@@ -8,3 +8,8 @@ export interface ListItemProps {
   children: ReactNode;
   link: string;
 }
+
+export interface CustomButtonProps {
+  children: ReactNode;
+  link: string;
+}

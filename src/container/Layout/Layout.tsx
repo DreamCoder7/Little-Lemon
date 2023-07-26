@@ -5,11 +5,11 @@ function Layout(props: LayoutProps) {
   const { children } = props;
 
   return (
-    <main>
+    <>
       <Nav />
       {children}
       <Footer />
-    </main>
+    </>
   );
 }
 

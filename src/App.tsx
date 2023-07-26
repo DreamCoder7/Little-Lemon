@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Layout } from "./container/index";
+import { Layout, Home } from "./container/index";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <Layout>
-        <h1>Little Lemon</h1>
+        <Home />
       </Layout>
     ),
   },

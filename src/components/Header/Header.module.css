@@ -1,0 +1,48 @@
+.Header {
+  background-color: var(--color-primary);
+  height: 65vh;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.Content {
+  justify-self: end;
+  padding: var(--spacing-8);
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-8);
+}
+
+.Title {
+  font-size: var(--fontSize-11);
+  color: var(--color-primary2);
+}
+
+.Title span {
+  display: block;
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-200);
+}
+
+.Intro {
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-300);
+
+  padding-bottom: var(--spacing-16);
+  width: 80%;
+}
+
+.ImageContainer {
+  width: var(--maxWidth-xl);
+  height: 400px;
+}
+
+.Image {
+  width: 100%;
+  border-radius: 16px;
+}
