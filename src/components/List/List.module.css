@@ -1,0 +1,5 @@
+.List {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+}

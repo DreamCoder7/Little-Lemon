@@ -1,14 +1,20 @@
-// import {createBrowserRouter as Router} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Nav } from "./component";
+import { Layout } from "./container/index";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: (
+      <Layout>
+        <h1>Little Lemon</h1>
+      </Layout>
+    ),
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <Nav />
-      Little lemon
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

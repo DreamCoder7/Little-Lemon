@@ -1,0 +1,11 @@
+.ListItem {
+  list-style: none;
+}
+
+.Link {
+  text-decoration: none;
+
+  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--color--gray-800);
+}

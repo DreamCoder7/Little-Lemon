@@ -1,0 +1,10 @@
+.container {
+  width: 10rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 100%;
+}
