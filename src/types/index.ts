@@ -14,9 +14,16 @@ export interface CustomButtonProps {
   link: string;
 }
 
-export interface CardProps {
+export interface HighlightCardProps {
   imgSrc: string;
   title: string;
   description: string;
   price: string;
+}
+
+export interface TestimonialCardProps {
+  name: string;
+  imgSrc: string;
+  description: string;
+  star: number;
 }

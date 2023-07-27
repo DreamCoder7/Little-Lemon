@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { MdDeliveryDining } from "react-icons/md";
 
-import { CardProps } from "../../types";
+import { HighlightCardProps } from "../../../types";
 import classes from "./Card.module.css";
 
-function Card(props: CardProps) {
+function Card(props: HighlightCardProps) {
   const { description, imgSrc, price, title } = props;
 
   return (

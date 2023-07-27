@@ -1,4 +1,4 @@
-import { Card } from "../index";
+import Card from "./Card/Card";
 import { Highlight } from "../../constants/index";
 import { Button } from "../UI";
 import classes from "./Highlight.module.css";
