@@ -13,3 +13,10 @@ export interface CustomButtonProps {
   children: ReactNode;
   link: string;
 }
+
+export interface CardProps {
+  imgSrc: string;
+  title: string;
+  description: string;
+  price: string;
+}

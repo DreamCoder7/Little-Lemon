@@ -6,6 +6,8 @@
   --color-primary2: #f4ce14;
 
   --color-secondary: #ee9972;
+  --color-secondary2: #fbdabb;
+  --color-secondary3: #edefee;
 
   --color--gray-50: #f9fafb;
   --color--gray-100: #f3f4f6;
@@ -114,4 +116,11 @@ html {
 
 body {
   font-family: var(--fontFamily-karla);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  align-items: center;
+  padding: 0 var(--spacing-24);
 }
