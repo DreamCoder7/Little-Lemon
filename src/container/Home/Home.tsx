@@ -1,4 +1,4 @@
-import { Header, Highlights, Testimonial } from "../../components/index";
+import { Header, Highlights, Testimonial, About } from "../../components/index";
 import classes from "./Home.module.css";
 
 function Home() {
@@ -7,6 +7,7 @@ function Home() {
       <Header />
       <Highlights />
       <Testimonial />
+      <About />
     </main>
   );
 }

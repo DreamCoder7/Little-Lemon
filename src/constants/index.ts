@@ -7,6 +7,9 @@ import userImg2 from "../assets/images/mubariz.jpg";
 import userImg3 from "../assets/images/sergio.jpg";
 import userImg4 from "../assets/images/stefan.jpg";
 
+import resturantChef from "../assets/images/restaurant chef B.jpg";
+import resturantPlace from "../assets/images/restaurant.jpg";
+
 export const Highlight = {
   title: "This weeks specials!",
   btn: "Online Menu",
@@ -67,4 +70,13 @@ export const Testimonial = {
       star: 5,
     },
   ],
+};
+
+export const about = {
+  title: "Little Lemon",
+  highlight: "Chicago",
+  description: `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. `,
+  img: resturantChef,
+  overlayImg: resturantPlace,
 };

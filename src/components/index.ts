@@ -5,5 +5,6 @@ import List from "./List/List";
 import Card from "./Highlights/Card/Card";
 import Highlights from "./Highlights/Highlights";
 import Testimonial from "./Testimonial/Testimonial";
+import About from "./About/About";
 
-export { Header, Footer, Nav, List, Card, Highlights, Testimonial };
+export { Header, Footer, Nav, List, Card, Highlights, Testimonial, About };
