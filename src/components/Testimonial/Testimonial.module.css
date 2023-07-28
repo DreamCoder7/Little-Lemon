@@ -7,7 +7,7 @@
 
 .Title {
   grid-column: 1/ -1;
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-8);
   font-weight: var(--fontWeight-semibold);
   text-align: center;
   color: var(--color--gray-100);

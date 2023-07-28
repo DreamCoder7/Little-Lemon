@@ -53,7 +53,7 @@ export const Testimonial = {
       name: "Ronald",
       img: userImg1,
       description:
-        "origin relationship avoid clothing greatest explore together better please sight distance blanket double discuss environment pink.",
+        "origin relationship avoid clothing greatest explore together better please sight distance blanket double discuss.",
       star: 4,
     },
     {

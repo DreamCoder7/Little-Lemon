@@ -75,15 +75,30 @@
 
 .Description {
   font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-semibold);
+  /* margin-left: var(--spacing-5); */
   z-index: 1;
 }
 
 .Icons {
-  align-self: flex-end;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .Icon {
   width: 1.8rem;
   height: 1.8rem;
   color: var(--color-primary2);
+}
+
+.IconQuoteRight {
+  color: var(--color-primary);
+  margin-right: var(--spacing-2);
+}
+
+.IconQuoteLeft {
+  color: var(--color-primary2);
+  margin-left: var(--spacing-2);
+  transform: translateY(1rem);
 }
