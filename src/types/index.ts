@@ -7,6 +7,7 @@ export interface LayoutProps {
 export interface ListItemProps {
   children: ReactNode;
   link: string;
+  color: string;
 }
 
 export interface CustomButtonProps {
@@ -26,4 +27,9 @@ export interface TestimonialCardProps {
   imgSrc: string;
   description: string;
   star: number;
+}
+
+export interface ListProps {
+  flex: string;
+  color: string;
 }

@@ -10,6 +10,14 @@ import userImg4 from "../assets/images/stefan.jpg";
 import resturantChef from "../assets/images/restaurant chef B.jpg";
 import resturantPlace from "../assets/images/restaurant.jpg";
 
+import { HiLocationMarker } from "react-icons/hi";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+
+import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { BiLogoTelegram } from "react-icons/bi";
+import { TbBrandFacebookFilled } from "react-icons/tb";
+
 export const Highlight = {
   title: "This weeks specials!",
   btn: "Online Menu",
@@ -79,4 +87,45 @@ export const about = {
   Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. `,
   img: resturantChef,
   overlayImg: resturantPlace,
+};
+
+export const footer = {
+  nav: {
+    title: "Doormat Navigation",
+  },
+  contact: {
+    title: "Contact",
+    list: [
+      {
+        Icon: HiLocationMarker,
+        name: "Addis Ababa, st.",
+      },
+      {
+        Icon: BiSolidPhoneCall,
+        name: "+251-9-20-36-92-62",
+      },
+      {
+        Icon: MdEmail,
+        name: "littleLemon@gmail.com",
+      },
+    ],
+  },
+  socialMediaLink: [
+    {
+      Icon: AiFillLinkedin,
+      link: "",
+    },
+    {
+      Icon: AiOutlineTwitter,
+      link: "",
+    },
+    {
+      Icon: BiLogoTelegram,
+      link: "",
+    },
+    {
+      Icon: TbBrandFacebookFilled,
+      link: "",
+    },
+  ],
 };

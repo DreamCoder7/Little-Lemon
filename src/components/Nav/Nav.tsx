@@ -6,7 +6,7 @@ function Nav() {
   return (
     <nav className={classes.Nav}>
       <Logo />
-      <List />
+      <List flex="row" color="var(--color--gray-800)" />
     </nav>
   );
 }
