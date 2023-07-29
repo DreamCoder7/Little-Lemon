@@ -18,6 +18,15 @@ import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoTelegram } from "react-icons/bi";
 import { TbBrandFacebookFilled } from "react-icons/tb";
 
+export const Header = {
+  title: "Little Lemon",
+  highlight: "Chicago",
+  text: ` Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+`,
+  btn: "Reserve a Table",
+};
+
 export const Highlight = {
   title: "This weeks specials!",
   btn: "Online Menu",
@@ -129,3 +138,11 @@ export const footer = {
     },
   ],
 };
+
+export const Reservation = {
+  title: "Make a Reservation",
+  highlight: "Your table",
+  images: [greekSalad, bruchetta, LemonDessert, resturantChef],
+};
+
+export const BookingForm = {};

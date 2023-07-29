@@ -6,5 +6,16 @@ import Card from "./Highlights/Card/Card";
 import Highlights from "./Highlights/Highlights";
 import Testimonial from "./Testimonial/Testimonial";
 import About from "./About/About";
+import BookingForm from "./BookingForm/BookingForm";
 
-export { Header, Footer, Nav, List, Card, Highlights, Testimonial, About };
+export {
+  Header,
+  Footer,
+  Nav,
+  List,
+  Card,
+  Highlights,
+  Testimonial,
+  About,
+  BookingForm,
+};

@@ -33,3 +33,8 @@ export interface ListProps {
   flex: string;
   color: string;
 }
+
+export interface BookingFormProps {
+  availableTimes: string[];
+  updateTimes: () => void;
+}

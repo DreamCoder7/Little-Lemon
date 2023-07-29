@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Layout, Home } from "./container/index";
+import { Layout, Home, Booking } from "./container/index";
 
 const router = createBrowserRouter([
   {
@@ -8,6 +8,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Home />
+      </Layout>
+    ),
+  },
+  {
+    path: "/reservation",
+    element: (
+      <Layout>
+        <Booking />
       </Layout>
     ),
   },
