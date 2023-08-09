@@ -2,10 +2,23 @@
   text-decoration: none;
 
   background-color: var(--color-primary2); /* Green */
-  padding: 15px 32px;
+  padding: 1.5rem 3.2rem;
   text-align: center;
   border-radius: 1.6rem;
   font-size: var(--fontSize-5);
   font-weight: var(--fontWeight-semibold);
   color: var(--color--gray-dark);
+
+  transition: all 0.6s;
+}
+
+.Button:hover {
+  transform: translateX(1rem);
+}
+
+@media (max-width: 390px) {
+  .Button {
+    padding: 1rem 2rem;
+    font-size: var(--fontSize-4);
+  }
 }

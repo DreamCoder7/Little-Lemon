@@ -46,3 +46,15 @@
   width: 200px;
   height: 200px;
 }
+
+@media (max-width: 390px) {
+  .Title {
+    font-size: var(--fontSize-9);
+  }
+
+  /* TEMP */
+  .ImgCon {
+    /* flex-direction: column; */
+    overflow: hidden;
+  }
+}

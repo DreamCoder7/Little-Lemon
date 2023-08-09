@@ -77,3 +77,27 @@
 .SocialMediaItem {
   list-style: none;
 }
+
+@media (max-width: 390px) {
+  .LogoCon {
+    grid-column: 1 / -1;
+    align-items: center;
+  }
+
+  .Nav {
+    grid-column: 1 / -1;
+    gap: var(--spacing-8);
+
+    padding: var(--spacing-12) 0;
+  }
+
+  .Contact {
+    grid-column: 1 / -1;
+    gap: var(--spacing-8);
+  }
+
+  .Icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}

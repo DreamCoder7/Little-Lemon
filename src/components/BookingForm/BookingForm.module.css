@@ -63,3 +63,10 @@
   font-weight: var(--fontWeight-semibold);
   cursor: pointer;
 }
+
+@media (max-width: 390px) {
+  .BookingForm {
+    width: 100%;
+    padding: var(--spacing-32) var(--spacing-8);
+  }
+}

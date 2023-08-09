@@ -9,3 +9,9 @@
   align-items: flex-start;
   gap: var(--spacing-4);
 }
+
+@media (max-width: 390px) {
+  .List {
+    display: none;
+  }
+}

@@ -6,3 +6,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 390px) {
+  .Nav {
+    height: 6rem;
+    background-color: var(--color-primary);
+  }
+}

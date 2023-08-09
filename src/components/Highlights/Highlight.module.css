@@ -24,3 +24,21 @@
 
   padding-top: var(--spacing-16);
 }
+
+@media (max-width: 390px) {
+  .Highlight {
+    margin-top: 20rem;
+  }
+
+  .Container {
+    grid-column: 1 / -1;
+    flex-direction: column;
+  }
+
+  .Intro {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-16);
+  }
+}

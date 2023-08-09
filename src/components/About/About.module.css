@@ -41,3 +41,26 @@
 .OverlayImg {
   transform: translateX(-8rem) translateY(-10rem);
 }
+
+@media (max-width: 390px) {
+  .About {
+    padding: var(--spacing-24) var(--spacing-8);
+  }
+
+  .Title {
+    font-size: var(--fontSize-10);
+  }
+
+  .ImageContainer {
+    grid-row: 2;
+    grid-column: 1 / -1;
+
+    width: 19rem;
+    height: 25rem;
+    margin-top: 15rem;
+  }
+
+  .Content {
+    grid-column: 1 / -1;
+  }
+}

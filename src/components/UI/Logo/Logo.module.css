@@ -8,3 +8,9 @@
 .Logo {
   width: 100%;
 }
+
+@media (max-width: 390px) {
+  .Logo {
+    display: none;
+  }
+}

@@ -21,3 +21,15 @@
 
   margin-top: var(--spacing-32);
 }
+
+@media (max-width: 390px) {
+  .Testimonial {
+    padding: var(--spacing-24) 0;
+    justify-content: center;
+  }
+
+  .CardContainer {
+    flex-direction: column;
+    grid-column: 1 / -1;
+  }
+}
