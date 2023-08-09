@@ -142,7 +142,15 @@ export const footer = {
 export const Reservation = {
   title: "Make a Reservation",
   highlight: "Your table",
-  images: [greekSalad, bruchetta, LemonDessert, resturantChef],
+  images: [
+    greekSalad,
+    LemonDessert,
+    resturantChef,
+    greekSalad,
+    LemonDessert,
+    resturantChef,
+    greekSalad,
+  ],
 };
 
 export const BookingForm = {};

@@ -34,9 +34,10 @@
 
 .ImgCon {
   display: flex;
-  gap: var(--spacing-4);
+  gap: var(--spacing-6);
 
-  background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8));
+  /* background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)); */
+  background-color: var(--color--gray-50);
   padding: var(--spacing-4);
   transform: translateY(2rem);
 }
