@@ -1,0 +1,44 @@
+.Highlight {
+  margin-top: var(--spacing-32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-20);
+}
+
+.Intro {
+  grid-column: 3 / 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Title {
+  font-size: var(--fontSize-8);
+  font-weight: var(--fontWeight-semibold);
+}
+
+.Container {
+  grid-column: 3/ 10;
+  display: flex;
+  gap: var(--spacing-16);
+
+  padding-top: var(--spacing-16);
+}
+
+@media (max-width: 390px) {
+  .Highlight {
+    margin-top: 20rem;
+  }
+
+  .Container {
+    grid-column: 1 / -1;
+    flex-direction: column;
+  }
+
+  .Intro {
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-16);
+  }
+}

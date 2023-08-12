@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+:root {
+  --color-primary: #495e57;
+  --color-primary2: #f4ce14;
+
+  --color-secondary: #ee9972;
+  --color-secondary2: #fbdabb;
+  --color-secondary3: #edefee;
+
+  --color--gray-50: #f9fafb;
+  --color--gray-100: #f3f4f6;
+  --color--gray-200: #e5e7eb;
+  --color--gray-300: #d1d5db;
+  --color--gray-400: #9ca3af;
+  --color--gray-500: #6b7280;
+  --color--gray-600: #4b5563;
+  --color--gray-700: #374151;
+  --color--gray-800: #1f2937;
+  --color--gray-900: #111827;
+  --color--gray-dark: #030712;
+
+  --boxShadow-0: rgba(8, 144, 178, 0.878);
+  --linearGradient: linear-gradient(
+    rgba(17, 24, 39, 0.874),
+    rgba(31, 41, 55, 0.852)
+  );
+
+  --linearGradient-error: linear-gradient(
+    rgba(190, 24, 93, 0.9),
+    rgba(17, 24, 39, 0.788)
+  );
+
+  --linearGradient-success: linear-gradient(
+    rgba(34, 197, 94, 0.892),
+    rgba(17, 24, 39, 0.788)
+  );
+
+  --maxWidth-none: "none";
+  --maxWidth-xs: 20rem;
+  --maxWidth-sm: 24rem;
+  --maxWidth-md: 28rem;
+  --maxWidth-lg: 32rem;
+  --maxWidth-xl: 36rem;
+  --maxWidth-2xl: 42rem;
+  --maxWidth-3xl: 48rem;
+  --maxWidth-4xl: 56rem;
+  --maxWidth-full: "100%";
+  --maxWidth-wrapper: var(--maxWidth-2xl);
+  /* Spacing */
+  --spacing-px: "1px";
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+  --spacing-24: 6rem;
+  --spacing-32: 8rem;
+
+  --fontFamily-markazi: "Markazi Text", "serif";
+  --fontFamily-karla: "Karla", "sans-serif";
+
+  --font-body: var(--fontFamily-serif);
+  --font-heading: var(--fontFamily-sans);
+  /* Font weight */
+  --fontWeight-normal: 400;
+  --fontWeight-medium: 500;
+  --fontWeight-semibold: 600;
+  --fontWeight-bold: 700;
+  --fontWeight-extrabold: 800;
+  --fontWeight-black: 900;
+  --fontSize-root: 12px;
+
+  /* line Height */
+  --lineHeight-none: 1;
+  --lineHeight-tight: 1.3;
+  --lineHeight-normal: 1.5;
+  --lineHeight-relaxed: 1.625;
+
+  /* 1.200 Minor Third Type Scale */
+  --fontSize-0: 0.833rem;
+  --fontSize-1: 1rem;
+  --fontSize-2: 1.2rem;
+  --fontSize-3: 1.4rem;
+  --fontSize-4: 1.6rem;
+  --fontSize-5: 1.8rem;
+  --fontSize-6: 2rem;
+  --fontSize-7: 2.4rem;
+  --fontSize-7: 3rem;
+  --fontSize-8: 3.2rem;
+  --fontSize-9: 4rem;
+  --fontSize-10: 5rem;
+  --fontSize-11: 6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--fontFamily-karla);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  align-items: center;
+  padding: 0 var(--spacing-24);
+}
+
+@media (max-width: 390px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 var(--spacing-2);
+  }
+}

@@ -1,0 +1,103 @@
+.Footer {
+  background-color: #333333;
+  padding: var(--spacing-20);
+
+  display: flex;
+  justify-content: center;
+}
+
+.LogoCon {
+  grid-column: 2 / 4;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.Contact,
+.Nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.Nav {
+  grid-column: 5 / 8;
+}
+
+.ContactTitle,
+.Title {
+  font-size: var(--fontSize-6);
+  color: var(--color--gray-50);
+}
+
+.Contact {
+  align-self: start;
+  grid-column: 9 / 11;
+}
+
+.ContactTitle {
+}
+
+.List {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.Item {
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.Icon {
+  background-color: var(--color-primary2);
+  color: var(--color-primary);
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  padding: var(--spacing-2);
+}
+
+.Name {
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-50);
+}
+
+.SocialMediaList {
+  display: flex;
+  gap: var(--spacing-4);
+
+  padding-top: var(--spacing-4);
+}
+
+.SocialMediaItem {
+  list-style: none;
+}
+
+@media (max-width: 390px) {
+  .LogoCon {
+    grid-column: 1 / -1;
+    align-items: center;
+  }
+
+  .Nav {
+    grid-column: 1 / -1;
+    gap: var(--spacing-8);
+
+    padding: var(--spacing-12) 0;
+  }
+
+  .Contact {
+    grid-column: 1 / -1;
+    gap: var(--spacing-8);
+  }
+
+  .Icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
