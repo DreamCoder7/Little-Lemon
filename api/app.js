@@ -1,38 +1,37 @@
-require("dotenv").config();
-
 const express = require("express");
-const cookieParser = require("cookie-parser");
-const logger = require("morgan");
 const mongoose = require("mongoose");
 const cors = require("cors");
-
-const AvailabilityRoute = require("./routes/availability.route");
-const ReservationRoute = require("./routes/reservation.route");
+const bodyParser = require("body-parser");
 
 const app = express();
 
-// connect to the DB
-mongoose.connect(process.env.MONGO_URL, {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-});
+require("dotenv").config();
 
-const db = mongoose.connection;
+const userRoutes = require("./routes/user.routes");
+
+const MONGO_URL = process.env.MONGO_URL;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-
-app.use(logger("dev"));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes
-db.on("error", console.error.bind(console, "connection error: "));
-db.once("open", (_) => {
-  console.log("Connect to DB!");
-});
+app.use("/", userRoutes);
 
-app.use("/", AvailabilityRoute);
-app.use("/", ReservationRoute);
+console.log(`Server running on port ${PORT}`);
+
+mongoose
+  .connect(MONGO_URL)
+  .then((res) => {
+    console.log("Connected to DB!");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+
+// });
 
 module.exports = app;

@@ -1,19 +1,15 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const reservationSchema = require("./reservation.model").schema;
-
-let tableSchema = new mongoose.Schema({
-  name: String,
-  capacity: Number,
-  isAvailable: Boolean,
-  location: String,
-  reservation: {
-    required: false,
-    type: reservationSchema,
+const tableSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
   },
+  description: String,
+  capacity: Number,
+  location: String,
+  isAvailable: Boolean,
 });
 
-let Table = mongoose.model("Table", tableSchema);
-
-module.exports.model = Table;
-module.exports.schema = tableSchema;
+module.exports = mongoose.model("Table", tableSchema);
