@@ -3,11 +3,13 @@ import classes from "./List.module.css";
 import { ListProps } from "../../types";
 
 function List(props: ListProps) {
-  const { flex, color } = props;
+  const { flex, color, isNavOpen } = props;
   const listClass =
     flex === "row"
       ? classes.List
       : [classes.List, classes.FlexColumn].join(" ");
+
+  console.log(isNavOpen);
 
   return (
     <ul className={listClass}>

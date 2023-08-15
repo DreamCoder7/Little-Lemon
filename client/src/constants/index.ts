@@ -18,6 +18,8 @@ import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { BiLogoTelegram } from "react-icons/bi";
 import { TbBrandFacebookFilled } from "react-icons/tb";
 
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
 export const Header = {
   title: "Little Lemon",
   highlight: "Chicago",
@@ -154,3 +156,5 @@ export const Reservation = {
 };
 
 export const BookingForm = {};
+
+export { HiOutlineMenuAlt3 };

@@ -32,9 +32,15 @@ export interface TestimonialCardProps {
 export interface ListProps {
   flex: string;
   color: string;
+  isNavOpen: boolean;
 }
 
 export interface BookingFormProps {
   availableTimes: string[];
   updateTimes: () => void;
+}
+
+export interface ToggleProps {
+  clicked: () => void;
+  isOpen: boolean;
 }

@@ -1,6 +1,6 @@
-import { Button } from "../UI/index";
 import HeroImg from "../../assets/hero.jpg";
 import classes from "./Header.module.css";
+import { Button } from "../UI/index";
 import { Header as HeaderData } from "../../constants";
 
 function Header() {

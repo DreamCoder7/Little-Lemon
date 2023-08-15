@@ -1,0 +1,30 @@
+.Toggle {
+  all: unset;
+
+  position: absolute;
+  top: var(--spacing-16);
+  right: var(--spacing-8);
+
+  background-color: var(--color--gray-50);
+  border-radius: 50%;
+  padding: var(--spacing-3);
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: none;
+  cursor: pointer;
+}
+
+.Icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--color-primary2);
+}
+
+@media (max-width: 460px) {
+  .Toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
