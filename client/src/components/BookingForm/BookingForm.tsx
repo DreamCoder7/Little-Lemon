@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import classes from "./BookingForm.module.css";
 import { BookingFormProps } from "../../types";
 
@@ -8,10 +8,24 @@ function BookingForm(props: BookingFormProps) {
   const [guests, setGuests] = useState<string>("");
   const [occasion, setOccastion] = useState<string>("");
 
+  useEffect(() => {
+    fetch("https://little-lemon-main.onrender.com/availability", {
+      method: "POST",
+      body: JSON.stringify({ time, availableTimes }),
+      headers: {
+        "Content-Type": "applcaition/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+  });
+
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
     // Handle form submission here (e.g., sending reservation data to the server)
-    console.log(time, guests, occasion);
+    console.log(time, guests, occasion, availableTimes);
 
     // Git commit
     // Implemented the frontend logic to communicate with the backend server and send reservation requests.
@@ -20,7 +34,6 @@ function BookingForm(props: BookingFormProps) {
   const handleDateChange = (event: ChangeEvent<HTMLInputElement>) => {
     console.log(event.target.value);
     // Handle date change here if required
-    // For this example, we'll just call the updateTimes function from props.
     updateTimes();
   };
 
