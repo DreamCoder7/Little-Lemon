@@ -26,30 +26,37 @@ exports.getTables = async (req, res) => {
 
 //check if a table is available for reservation
 exports.checkAvailability = async (req, res) => {
-  const { tableId } = req.body;
-  try {
-    const table = await Table.findById(tableId);
+  const { date, time } = req.body;
 
-    //If the table is not found, return an error
-    if (!table) {
+  try {
+    const tables = await Table.find();
+
+    // If the table is not found, return an error
+    if (!tables) {
       return res.status(400).json({
         status: "fail",
-        message: "Table not found",
+        message: "No tables!",
       });
     }
+
+    const availableTables = tables.filter((table) => table.isAvailable);
 
     //If the table is reserved, return an error
-    if (table.isAvailable === false) {
+    if (availableTables.length < 0) {
       return res.status(400).json({
         status: "fail",
-        message: "Table is already reserved",
+        message: "There is not available tables!",
       });
     }
+    console.log(availableTables);
 
     //If the table is available, return a success message
-    return res
+    res
       .status(200)
-      .json({ status: success, message: "Table is available for reservation" });
+      .json({
+        status: "success",
+        message: "Table is available for reservation",
+      });
   } catch (err) {
     return res.status(500).json({
       status: "fail",
