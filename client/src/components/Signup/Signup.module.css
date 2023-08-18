@@ -1,0 +1,97 @@
+.Signup {
+  background-color: var(--color--gray-100);
+  padding: var(--spacing-16);
+  padding-top: var(--spacing-8);
+  border-radius: 1rem;
+
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.Heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.Title {
+  font-size: var(--fontSize-7);
+  color: var(--color--gray-900);
+}
+
+.Text {
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-800);
+}
+
+.InputCon {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.Input {
+  border: none;
+  background-color: var(--color--gray-50);
+  padding: var(--spacing-8);
+  border-radius: 3.2rem;
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-700);
+}
+
+.Input::placeholder {
+  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-bold);
+  color: var(--color--gray-500);
+}
+
+.Input:focus {
+  outline: none;
+}
+
+.Btn {
+  all: unset;
+  align-self: flex-start;
+
+  background-color: var(--color-primary);
+  padding: var(--spacing-6) var(--spacing-8);
+  border-radius: 3.2rem;
+  color: var(--color--gray-50);
+  font-size: var(--fontSize-5);
+  font-weight: var(--fontWeight-bold);
+  box-shadow: 0 0 5px var(--color--gray-800);
+  cursor: pointer;
+}
+
+.ExistedAcc {
+  display: flex;
+  gap: var(--spacing-4);
+}
+
+.ExistedAccTitle {
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-700);
+}
+
+.LoginBtn {
+  all: unset;
+
+  color: var(--color-primary2);
+  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-bold);
+  cursor: pointer;
+}
+
+.ModalClose {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.IconClose {
+  width: 3.2rem;
+  height: 3.2rem;
+}
