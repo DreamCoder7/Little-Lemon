@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { Logo, Toggle } from "../UI";
-import List from "../List/List";
+import { Logo, Toggle, Overlay } from "../UI";
+import List from "./List/List";
 import classes from "./Nav.module.css";
 
 function Nav() {
@@ -16,7 +16,8 @@ function Nav() {
       <Toggle clicked={toggleNavHandler} isOpen={isNavOpen} />
 
       <Logo />
-      <List flex="row" color="var(--color--gray-800)" isNavOpen={isNavOpen} />
+      <List isNavOpen={isNavOpen} clicked={toggleNavHandler} />
+      <Overlay show={isNavOpen} clicked={toggleNavHandler} />
     </nav>
   );
 }
