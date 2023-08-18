@@ -8,6 +8,7 @@ const app = express();
 require("dotenv").config();
 
 const userRoutes = require("./routes/user.routes");
+const authRoutes = require("./routes/auth.routes");
 
 const MONGO_URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 5000;
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", userRoutes);
+app.use("/", authRoutes);
 
 console.log(`Server running on port ${PORT}`);
 
