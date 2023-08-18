@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Layout, Home, Booking } from "./container/index";
+import AuthcontextProvider from "./components/context/auth.context";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <AuthcontextProvider>
+      <RouterProvider router={router} />
+    </AuthcontextProvider>
+  );
 }
 
 export default App;

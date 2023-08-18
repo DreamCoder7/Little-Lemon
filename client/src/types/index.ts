@@ -7,7 +7,6 @@ export interface LayoutProps {
 export interface ListItemProps {
   children: ReactNode;
   link: string;
-  color: string;
 }
 
 export interface CustomButtonProps {
@@ -30,9 +29,8 @@ export interface TestimonialCardProps {
 }
 
 export interface ListProps {
-  flex: string;
-  color: string;
   isNavOpen: boolean;
+  clicked: () => void;
 }
 
 export interface BookingFormProps {
@@ -44,3 +42,22 @@ export interface ToggleProps {
   clicked: () => void;
   isOpen: boolean;
 }
+
+export interface OverlayProps {
+  show: boolean;
+  clicked: () => void;
+}
+
+export interface SignupProps {
+  setLoginMode: () => void;
+}
+
+export interface LoginProps {
+  setSignupMode: () => void;
+}
+
+export type FormData = {
+  name: string;
+  email: string;
+  password: string;
+};

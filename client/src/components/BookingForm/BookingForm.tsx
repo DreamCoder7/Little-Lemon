@@ -20,12 +20,10 @@ function BookingForm(props: BookingFormProps) {
       .then((data) => {
         console.log(data);
       });
-  });
+  }, []);
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    // Handle form submission here (e.g., sending reservation data to the server)
-    console.log(time, guests, occasion, availableTimes);
 
     // Git commit
     // Implemented the frontend logic to communicate with the backend server and send reservation requests.

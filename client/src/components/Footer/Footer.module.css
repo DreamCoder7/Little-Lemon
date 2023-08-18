@@ -25,6 +25,43 @@
   grid-column: 5 / 8;
 }
 
+.List {
+  display: flex;
+  gap: var(--spacing-8);
+  /* align-items: center; */
+}
+
+.ListItem {
+  list-style: none;
+
+  position: relative;
+}
+
+.Link {
+  text-decoration: none;
+
+  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-semibold);
+  color: var(--color--gray-50);
+}
+
+.ListItem::before {
+  content: "";
+  background-color: var(--color-primary2);
+  opacity: 0.8;
+  width: 0;
+  height: 4px;
+
+  position: absolute;
+  top: 50%;
+
+  transition: all 0.5s;
+}
+
+.ListItem:hover::before {
+  width: 100%;
+}
+
 .ContactTitle,
 .Title {
   font-size: var(--fontSize-6);
