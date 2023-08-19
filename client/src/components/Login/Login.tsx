@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 import classes from "./Login.module.css";
 import { GrFormClose } from "../../constants/index";
-import { Authcontext } from "../context/auth.context";
+import { ModalContext } from "../../context/modal.context";
 import { LoginProps } from "../../types";
 
 function Login(props: LoginProps) {
   const { setSignupMode } = props;
 
-  const { modalHandler } = useContext(Authcontext);
+  const { modalHandler } = useContext(ModalContext);
 
   return (
     <motion.form

@@ -5,6 +5,61 @@
   gap: var(--spacing-20);
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+.User {
+  position: absolute;
+  top: var(--spacing-16);
+  right: var(--spacing-32);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.Info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.UserIcon {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  cursor: pointer;
+}
+
+.Name {
+  font-size: var(--fontSize-5);
+}
+
+.Email {
+  font-size: var(--fontSize-3);
+}
+
+.Options {
+  /* position: absolute;
+  bottom: -8rem; */
+  margin-top: var(--spacing-8);
+
+  background-color: var(--color--gray-50);
+  box-shadow: 0 0 5px var(--color--gray-500);
+  border-radius: 1rem;
+  padding: var(--spacing-8);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.Items {
+  list-style: none;
+  font-size: var(--fontSize-4);
+
+  cursor: pointer;
 }
 
 @media (max-width: 390px) {

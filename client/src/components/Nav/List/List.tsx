@@ -4,11 +4,11 @@ import { ListItem } from "./ListItem/ListItem";
 import classes from "./List.module.css";
 import { ListProps } from "../../../types/index";
 import { GrFormClose } from "../../../constants/index";
-import { Authcontext } from "../../context/auth.context";
+import { ModalContext } from "../../../context/modal.context";
 
 function List(props: ListProps) {
   const { isNavOpen, clicked } = props;
-  const { modalHandler } = useContext(Authcontext);
+  const { modalHandler } = useContext(ModalContext);
 
   const listClasses = isNavOpen
     ? [classes.List, classes.MobileNavOpen].join(" ")

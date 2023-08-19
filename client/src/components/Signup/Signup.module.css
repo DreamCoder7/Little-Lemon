@@ -31,7 +31,7 @@
 .InputCon {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-4);
+  gap: var(--spacing-8);
 }
 
 .Input {
@@ -41,6 +41,8 @@
   border-radius: 3.2rem;
   font-size: var(--fontSize-4);
   color: var(--color--gray-700);
+
+  width: 100%;
 }
 
 .Input::placeholder {
@@ -51,6 +53,17 @@
 
 .Input:focus {
   outline: none;
+}
+
+.Input:disabled {
+  background-color: var(--color--gray-200);
+}
+
+.ErrorMessage {
+  color: var(--color--red-600);
+  font-size: var(--fontSize-4);
+  margin-bottom: var(--spacing-3);
+  margin-left: var(--spacing-6);
 }
 
 .Btn {
@@ -65,6 +78,13 @@
   font-weight: var(--fontWeight-bold);
   box-shadow: 0 0 5px var(--color--gray-800);
   cursor: pointer;
+}
+
+.Btn:disabled {
+  background-color: var(--color--gray-200);
+  color: var(--color--gray-500);
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .ExistedAcc {

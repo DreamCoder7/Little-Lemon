@@ -1,11 +1,11 @@
 import { createContext, ReactNode, useState } from "react";
 
-export const Authcontext = createContext({
+export const ModalContext = createContext({
   modalOpen: false,
   modalHandler: () => {},
 });
 
-const AuthcontextProvider = ({ children }: { children: ReactNode }) => {
+const ModalContextProvider = ({ children }: { children: ReactNode }) => {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const modalOpenHandler = () => {
@@ -17,7 +17,7 @@ const AuthcontextProvider = ({ children }: { children: ReactNode }) => {
     modalHandler: modalOpenHandler,
   };
 
-  return <Authcontext.Provider value={value}>{children}</Authcontext.Provider>;
+  return <ModalContext.Provider value={value}>{children}</ModalContext.Provider>;
 };
 
-export default AuthcontextProvider;
+export default ModalContextProvider;

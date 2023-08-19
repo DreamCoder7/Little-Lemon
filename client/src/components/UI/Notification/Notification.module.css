@@ -1,0 +1,11 @@
+.Notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  padding: var(--spacing-6);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  z-index: -1;
+}

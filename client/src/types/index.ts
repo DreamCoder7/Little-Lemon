@@ -61,3 +61,20 @@ export type FormData = {
   email: string;
   password: string;
 };
+
+export type NotificationProps = {
+  title: string;
+  status: "success" | "error" | "pending";
+  message: string;
+};
+
+export interface NotificationCtxProps {
+  notification: NotificationProps | null;
+  showNotification: (notificationData: NotificationProps) => void;
+  hideNotification: () => void;
+}
+
+export interface AuthenticatedUserProps {
+  name: string | null;
+  email: string | null;
+}

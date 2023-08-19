@@ -20,6 +20,7 @@ import { TbBrandFacebookFilled } from "react-icons/tb";
 
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { GrFormClose } from "react-icons/gr";
+import { FaUserCircle } from "react-icons/fa";
 
 export const Header = {
   title: "Little Lemon",
@@ -158,4 +159,4 @@ export const Reservation = {
 
 export const BookingForm = {};
 
-export { HiOutlineMenuAlt3, GrFormClose };
+export { HiOutlineMenuAlt3, GrFormClose, FaUserCircle };
