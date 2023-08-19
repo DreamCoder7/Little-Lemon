@@ -1,6 +1,7 @@
 import { useState, ChangeEvent, FormEvent, useEffect } from "react";
 import classes from "./BookingForm.module.css";
 import { BookingFormProps } from "../../types";
+import axios from "axios";
 
 function BookingForm(props: BookingFormProps) {
   const { availableTimes, updateTimes } = props;
@@ -22,8 +23,18 @@ function BookingForm(props: BookingFormProps) {
       });
   }, []);
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
+
+    try {
+      const data = axios.post(
+        "https://little-lemon-main.onrender.com/reservation",
+        { time, guests, occasion }
+      );
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
 
     // Git commit
     // Implemented the frontend logic to communicate with the backend server and send reservation requests.

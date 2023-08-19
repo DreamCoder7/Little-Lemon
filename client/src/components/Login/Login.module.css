@@ -41,6 +41,7 @@
   border-radius: 3.2rem;
   font-size: var(--fontSize-4);
   color: var(--color--gray-700);
+  width: 100%;
 }
 
 .Input::placeholder {
@@ -103,4 +104,44 @@
 .IconClose {
   width: 3.2rem;
   height: 3.2rem;
+}
+
+.ErrorMessage {
+  color: var(--color--red-600);
+  font-size: var(--fontSize-4);
+  margin-bottom: var(--spacing-3);
+  margin-left: var(--spacing-6);
+}
+
+@media (max-width: 400px) {
+  .Login {
+    width: 90%;
+
+    padding: var(--spacing-8);
+  }
+
+  .Title {
+    font-size: var(--fontSize-6);
+  }
+
+  .Text {
+    font-size: var(--fontSize-3);
+  }
+
+  .Input {
+    font-size: var(--fontSize-3);
+  }
+
+  .Input::placeholder {
+    font-size: var(--fontSize-3);
+  }
+
+  .ForgotPass {
+    font-size: var(--fontSize-4);
+  }
+
+  .Btn {
+    font-size: var(--fontSize-3);
+    padding: var(--spacing-5) var(--spacing-12);
+  }
 }
